@@ -32,12 +32,16 @@ body {
 	font-size: 15px;
 	line-height: 24px;
 	color: $text;
+
 }
 
 .wrapper {
+	position: relative;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
+
 }
 
 .content {
@@ -117,5 +121,19 @@ body {
 		a {
 			color: #b0bec5;
 		}
+	}
+}
+
+.angle-right {
+	position: relative;
+	padding-left: 15px;
+
+	&::before {
+		content: "\f105";
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
 	}
 }
